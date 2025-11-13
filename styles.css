@@ -311,20 +311,13 @@ footer {
     height: 12vh;
     padding: 0 1em;
   }
-<<<<<<< HEAD
-  nav {
-    font-size: 0.6em;
-    position: absolute;
-    margin-top: 20%;
-=======
-
   .panel {
     flex-direction: column;
   }
 
   .panel .text {
     width: 80%;
->>>>>>> 1ac6797 (ultima)
+
   }
   form {
     width: 70vw;

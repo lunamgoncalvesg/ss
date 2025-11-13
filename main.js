@@ -11,22 +11,6 @@ function changeActiveLink(id, link = null) {
 
 links.forEach((link, index) => link.addEventListener('click', () => changeActiveLink(index, link)));
 
-<<<<<<< HEAD
-let cart = document.querySelector('#cart');
-let home = document.querySelector('#home');
-let btns = document.querySelectorAll('#buy, #back');
-let form = document.querySelector('form');
-let msg = document.querySelector('#msg');
-let h1 = document.querySelector('#cart h1');
-
-btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        cart.classList.toggle('active');
-        home.classList.toggle('active');
-        form.style.display = cart.classList.contains('active') ? 'grid' : 'none';
-        if (!cart.classList.contains('active')) msg.innerHTML = '';
-        else h1.style.display = 'block';
-=======
 window.addEventListener('scroll', () => {
     let currentSection = '';
     const scrollPos = window.scrollY + 150;
@@ -39,7 +23,6 @@ window.addEventListener('scroll', () => {
     links.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').includes(currentSection)) link.classList.add('active');
->>>>>>> 1ac6797 (ultima)
     });
 });
 
@@ -99,16 +82,6 @@ backBtn.addEventListener('click', () => {
 
 cartForm.addEventListener('submit', (e) => {
     e.preventDefault();
-<<<<<<< HEAD
-    form.style.display = 'none';
-    msg.innerHTML = '<h1>Su pedido llega en 3 días hábiles.</h1>';
-    let h1 = document.querySelector('#cart h1');
-    h1.style.display = 'none';
-    let backBtn = document.querySelector("#back");
-    backBtn.style.justifySelf = 'center';
-    form.reset();
-});
-=======
     cartForm.classList.add('hidden');
     thankYou.classList.remove('hidden');
 });
@@ -147,4 +120,3 @@ emailForm.addEventListener('submit', (e) => {
     emailForm.classList.add('hidden');
     contactThanks.classList.remove('hidden');
 });
->>>>>>> 1ac6797 (ultima)
